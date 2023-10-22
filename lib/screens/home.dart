@@ -24,6 +24,14 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('favorite_quotes');
+            },
+            icon: const Icon(Icons.book_outlined),
+          ),
+        ],
       ),
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(10),
@@ -63,14 +71,25 @@ class _HomePageState extends State<HomePage> {
                             color: const Color(0xffa11723),
                             alignment: Alignment.topLeft,
                             padding: const EdgeInsets.all(10),
-                            child: Text(
-                              '${e.id}',
-                              style: const TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xffffffff),
-                              ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  '${e.id}',
+                                  style: const TextStyle(
+                                    decoration: TextDecoration.none,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.favorite_border_outlined,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                           Container(
@@ -89,13 +108,17 @@ class _HomePageState extends State<HomePage> {
                           Container(
                             padding: const EdgeInsets.all(5),
                             alignment: Alignment.bottomRight,
-                            child: Text(
-                              "- ${e.author}",
-                              style: const TextStyle(
-                                fontSize: 20,
-                                decoration: TextDecoration.none,
-                                color: Color(0xffffffff),
-                              ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  "- ${e.author}",
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    decoration: TextDecoration.none,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -124,14 +147,25 @@ class _HomePageState extends State<HomePage> {
                             color: const Color(0xff000000),
                             alignment: Alignment.topLeft,
                             padding: const EdgeInsets.all(10),
-                            child: Text(
-                              '${e.id}',
-                              style: const TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xffffffff),
-                              ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  '${e.id}',
+                                  style: const TextStyle(
+                                    decoration: TextDecoration.none,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xffffffff),
+                                  ),
+                                ),
+                                const Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.favorite_border_outlined,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                           Container(

@@ -170,122 +170,132 @@ class Global {
         id: 36,
         quote: 'Don’t compare your Chapter 1 to someone else’s Chapter 20.',
         author: 'Unknown'),
-    // ...................................baki.............................................
-    // Quotes(
-    //     id: 37,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 38,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 39,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 40,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 41,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 42,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 43,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 44,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 45,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 46,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 47,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 48,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 49,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 50,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 51,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 52,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 53,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 54,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 55,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 56,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 57,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 58,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 59,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 60,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 61,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 62,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 63,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 64,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
-    // Quotes(
-    //     id: 65,
-    //     quote: 'The purpose of our lives is to be happy.',
-    //     author: 'Dalai Lama'),
+    Quotes(
+        id: 37,
+        quote: 'The privilege of a lifetime is to become who you are.',
+        author: 'C.G. Jung'),
+    Quotes(
+        id: 38,
+        quote: 'Do what is right, not what is easy nor what is popular.',
+        author: 'Roy T. Bennett'),
+    Quotes(
+        id: 39,
+        quote: 'Success isn’t permanent, and failure isn’t fatal.',
+        author: 'Mike Ditka'),
+    Quotes(
+        id: 40,
+        quote:
+            'If there’s a book that you want to read, but it hasn’t been written yet, then you must write it.',
+        author: 'Toni Morrison'),
+    Quotes(
+        id: 41,
+        quote:
+            'All you can change is yourself, but sometimes that changes everything.',
+        author: 'Unknown'),
+    Quotes(
+        id: 42,
+        quote: 'Don’t rush anything. When the time is right, it will happen.',
+        author: 'Unknown'),
+    Quotes(
+        id: 43,
+        quote:
+            'If the challenge we face doesn’t scare us, then it’s probably not that important.',
+        author: 'Simon Sinek'),
+    Quotes(
+        id: 44,
+        quote: 'Failure is the opportunity to begin again, more intelligently.',
+        author: 'Henry Ford'),
+    Quotes(
+        id: 45,
+        quote:
+            'Successful people maintain a positive focus in life no matter what is going on around them.',
+        author: 'Unknown'),
+    Quotes(
+        id: 46,
+        quote: 'Be kind to all creatures; this is the true religion.',
+        author: 'Buddha'),
+    Quotes(
+        id: 47,
+        quote: 'The true entrepreneur is a doer, not a dreamer.',
+        author: 'Nolan Bushnell'),
+    Quotes(
+        id: 48,
+        quote:
+            'After climbing a great hill, one only finds that there are many more hills to climb.',
+        author: 'Nelson Mandela'),
+    Quotes(
+        id: 49,
+        quote: 'Sometimes you win, sometimes you learn.',
+        author: 'Unknown'),
+    Quotes(
+        id: 50,
+        quote:
+            'Worrying does not take away tomorrow’s troubles. It takes away today’s peace.',
+        author: 'Unknown'),
+    Quotes(
+        id: 51,
+        quote: 'Forgiveness means letting go of the hope for a better past.',
+        author: 'Lama Surya Das'),
+    Quotes(id: 52, quote: 'Be a voice, not an echo.', author: 'Unknown'),
+    Quotes(
+        id: 53,
+        quote: 'The best revenge is to live an awesome life.',
+        author: 'Unknown'),
+    Quotes(
+        id: 54,
+        quote: 'There is no revenge so complete as forgiveness.',
+        author: 'Josh Billings'),
+    Quotes(
+        id: 55,
+        quote: 'Forgiveness is just another name for freedom.',
+        author: 'Byron Katie'),
+    Quotes(
+        id: 56,
+        quote:
+            'Why compare yourself with others? No one in the entire world can do a better job of being you than you.',
+        author: 'Unknown'),
+    Quotes(
+        id: 57,
+        quote:
+            'There is no abstract art. You must always start with something. Afterward you can remove all traces of reality.',
+        author: 'Pablo Picasso'),
+    Quotes(
+        id: 58,
+        quote:
+            'No matter what may have happened yesterday, a new day of fresh possibility has dawned. You are not the same person today as you were yesterday!',
+        author: 'Unknown'),
+    Quotes(
+        id: 59,
+        quote:
+            'Your heart is the size of an ocean. Go find yourself in its hidden depths.',
+        author: 'Rumi'),
+    Quotes(
+        id: 60,
+        quote: 'When you find yourself in a hole, quit digging.',
+        author: 'Will Rogers'),
+    Quotes(
+        id: 61,
+        quote:
+            'To admit you were wrong is to declare you are wiser now than before.',
+        author: 'Unknown'),
+    Quotes(
+        id: 62,
+        quote:
+            'Feed the areas of your life you want to grow. Starve the parts that need to go.',
+        author: 'Bruce V.H.'),
+    Quotes(
+        id: 63,
+        quote:
+            'Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.',
+        author: 'Martin Luther King Jr.'),
+    Quotes(
+        id: 64,
+        quote:
+            'Work hard in silence, do what you have to do, and ignore the drama and negativity surrounding you. Let your success be your noise.',
+        author: 'Unknown'),
+    Quotes(
+        id: 65,
+        quote: 'Everything happens for me, not to me.',
+        author: 'Byron Katie'),
   ];
 }
