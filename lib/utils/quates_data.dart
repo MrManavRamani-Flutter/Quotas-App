@@ -1,3 +1,39 @@
+List<Map<String, dynamic>> festival_data = [
+  {
+    'festival': 'Holi',
+  },
+  {
+    'festival': 'Diwali',
+  },
+  {
+    'festival': 'Ganesh Chaturthi',
+  },
+  {
+    'festival': 'Makar Sankranti',
+  },
+  {
+    'festival': 'Janmashtami',
+  },
+  {
+    'festival': 'Pongal',
+  },
+  {
+    'festival': 'Dussehra',
+  },
+  {
+    'festival': 'Lohri',
+  },
+  {
+    'festival': 'Mahashivratri',
+  },
+  {
+    'festival': 'Navratri',
+  },
+  {
+    'festival': 'Raksha Bandhan',
+  },
+];
+
 List<Map<String, dynamic>> allQuotes = [
   {
     'id': 1,

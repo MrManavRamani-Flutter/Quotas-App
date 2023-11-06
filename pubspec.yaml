@@ -35,6 +35,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  share_extend: "^2.0.0"
+  path_provider:
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +61,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/img/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
@@ -74,6 +78,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: font1
+      fonts:
+        - asset: assets/font/KGHAPPYShadows.ttf
+        - asset: assets/font/KGHAPPY.ttf
+        - asset: assets/font/KGHAPPYSolid.ttf
+    - family: font2
+      fonts:
+        - asset: assets/font/Valoon.ttf
+    - family: font3
+      fonts:
+        - asset: assets/font/CHERI___.ttf
+        - asset: assets/font/CHERL___.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

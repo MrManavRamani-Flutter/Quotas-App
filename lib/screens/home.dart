@@ -84,9 +84,14 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 const Spacer(),
                                 IconButton(
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.favorite_border_outlined,
+                                  onPressed: () {
+                                    Global.favoriteQuotes.add(e);
+                                    setState(() {});
+                                  },
+                                  icon: Icon(
+                                    (Global.favoriteQuotes.contains(e))
+                                        ? Icons.favorite
+                                        : Icons.favorite_border_outlined,
                                   ),
                                 ),
                               ],
@@ -160,9 +165,14 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 const Spacer(),
                                 IconButton(
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.favorite_border_outlined,
+                                  onPressed: () {
+                                    Global.favoriteQuotes.add(e);
+                                    setState(() {});
+                                  },
+                                  icon: Icon(
+                                    (Global.favoriteQuotes.contains(e))
+                                        ? Icons.favorite
+                                        : Icons.favorite_border_outlined,
                                   ),
                                 ),
                               ],
