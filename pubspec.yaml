@@ -79,6 +79,30 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: font10
+      fonts:
+        - asset: assets/font/BebasNeue-Regular.ttf
+    - family: font9
+      fonts:
+        - asset: assets/font/boycott_.ttf
+    - family: font8
+      fonts:
+        - asset: assets/font/Capture_it.ttf
+        - asset: assets/font/Capture_it_2.ttf
+    - family: font7
+      fonts:
+        - asset: assets/font/edo.ttf
+    - family: font6
+      fonts:
+        - asset: assets/font/fff_tusj.ttf
+    - family: font5
+      fonts:
+        - asset: assets/font/JosefinSans-Bold.ttf
+        - asset: assets/font/JosefinSans-Italic.ttf
+        - asset: assets/font/JosefinSans-Regular.ttf
+    - family: font4
+      fonts:
+        - asset: assets/font/SEASRN__.ttf
     - family: font1
       fonts:
         - asset: assets/font/KGHAPPYShadows.ttf

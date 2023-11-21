@@ -36,12 +36,30 @@ class _Info_PageState extends State<Info_Page> {
                       color: Colors.white,
                     ),
                     width: double.infinity,
-                    child: const Text(
-                      'Quote Page',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.black,
-                      ),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            height: 250,
+                            width: double.infinity,
+                            color: Colors.brown,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            alignment: Alignment.center,
+                            child: const Text(
+                              'Quote Page',
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),

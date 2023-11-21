@@ -7,6 +7,13 @@ class Global {
   static List<String> fonts = [
     'font2',
     'font3',
+    'font4',
+    'font5',
+    'font6',
+    'font7',
+    'font8',
+    'font9',
+    'font10',
   ];
   static List<double> textsSize = [
     15,

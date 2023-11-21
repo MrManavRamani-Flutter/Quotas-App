@@ -71,6 +71,7 @@ class _Fest_DesignState extends State<Fest_Design> {
                   chooseColor = Colors.black;
                   chooseBackGroundColor = Colors.white;
                   chooseImage = '';
+                  Global.fest_quote = 'Press + To Add Quote';
                 });
               },
               icon: const Icon(Icons.restart_alt)),
@@ -182,12 +183,12 @@ class _Fest_DesignState extends State<Fest_Design> {
               ),
             ),
             const SizedBox(height: 30),
-            // Label Fonts
+            // Label Color...................................................
+            // Color ..........................
             Expanded(
               child: Container(
-                alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    color: Colors.brown,
+                    color: Colors.white60,
                     borderRadius: BorderRadius.circular(20)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,7 +196,7 @@ class _Fest_DesignState extends State<Fest_Design> {
                     const Padding(
                       padding: EdgeInsets.only(left: 15),
                       child: Text(
-                        "Fonts",
+                        "Color",
                         style: TextStyle(
                             fontSize: 22, fontWeight: FontWeight.bold),
                       ),
@@ -207,25 +208,21 @@ class _Fest_DesignState extends State<Fest_Design> {
                         scrollDirection: Axis.horizontal,
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          children: Global.fonts.map(
+                          children: Colors.primaries.map(
                             (e) {
                               return InkWell(
                                 onTap: () {
                                   setState(() {
-                                    chooseFonts = e;
+                                    chooseColor = e;
                                   });
                                 },
                                 child: Container(
                                   margin: const EdgeInsets.all(5),
-                                  height: 50,
+                                  height: 80,
                                   width: 80,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  child: Text(
-                                    'Fonts',
-                                    style:
-                                        TextStyle(fontSize: 25, fontFamily: e),
+                                    color: e,
                                   ),
                                 ),
                               );
@@ -238,118 +235,61 @@ class _Fest_DesignState extends State<Fest_Design> {
                 ),
               ),
             ),
-            const SizedBox(height: 30),
-            // Label Color...................................................
-            Row(
-              children: [
-                // Color ..........................
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.white60,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Padding(
-                          padding: EdgeInsets.only(left: 15),
-                          child: Text(
-                            "Color",
-                            style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Card(
-                          color: Colors.transparent,
-                          elevation: 0,
-                          child: SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: Colors.primaries.map(
-                                (e) {
-                                  return InkWell(
-                                    onTap: () {
-                                      setState(() {
-                                        chooseColor = e;
-                                      });
-                                    },
-                                    child: Container(
-                                      margin: const EdgeInsets.all(5),
-                                      height: 80,
-                                      width: 80,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
-                                        color: e,
-                                      ),
-                                    ),
-                                  );
+            const SizedBox(
+              height: 15,
+            ),
+            // BackGround Color........................................
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white60,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(left: 15),
+                      child: Text(
+                        "Background Color",
+                        style: TextStyle(
+                            fontSize: 21, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Card(
+                      elevation: 0,
+                      color: Colors.transparent,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: Colors.accents.map(
+                            (e) {
+                              return InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    chooseImage = '';
+                                    chooseBackGroundColor = e;
+                                  });
                                 },
-                              ).toList(),
-                            ),
-                          ),
+                                child: Container(
+                                  margin: const EdgeInsets.all(5),
+                                  height: 80,
+                                  width: 80,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: e,
+                                  ),
+                                ),
+                              );
+                            },
+                          ).toList(),
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-                const SizedBox(
-                  width: 15,
-                ),
-                // BackGround Color........................................
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.white60,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Padding(
-                          padding: EdgeInsets.only(left: 15),
-                          child: Text(
-                            "Background Color",
-                            style: TextStyle(
-                                fontSize: 21, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        Card(
-                          elevation: 0,
-                          color: Colors.transparent,
-                          child: SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: Colors.accents.map(
-                                (e) {
-                                  return InkWell(
-                                    onTap: () {
-                                      setState(() {
-                                        chooseImage = '';
-                                        chooseBackGroundColor = e;
-                                      });
-                                    },
-                                    child: Container(
-                                      margin: const EdgeInsets.all(5),
-                                      height: 80,
-                                      width: 80,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
-                                        color: e,
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ).toList(),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
             const SizedBox(
               height: 15,
@@ -413,6 +353,62 @@ class _Fest_DesignState extends State<Fest_Design> {
               ),
             ),
             const SizedBox(height: 30),
+            // Label Fonts
+            Expanded(
+              child: Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    // color: Colors.brown,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(left: 15),
+                      child: Text(
+                        "Fonts",
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Card(
+                      color: Colors.transparent,
+                      elevation: 0,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: Global.fonts.map(
+                            (e) {
+                              return InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    chooseFonts = e;
+                                  });
+                                },
+                                child: Container(
+                                  margin: const EdgeInsets.all(5),
+                                  height: 50,
+                                  width: 80,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: Text(
+                                    'Fonts',
+                                    style:
+                                        TextStyle(fontSize: 22, fontFamily: e),
+                                  ),
+                                ),
+                              );
+                            },
+                          ).toList(),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
