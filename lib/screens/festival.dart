@@ -15,7 +15,11 @@ class _FestivalState extends State<Festival> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Festival List'),
+        title: Text(
+          'Festival List',
+          style: TextStyle(fontFamily: 'font4'),
+        ),
+        centerTitle: true,
       ),
       body: ListView(
         children: Global.festivalData.map(
@@ -60,8 +64,10 @@ class _FestivalState extends State<Festival> {
                             padding: EdgeInsets.all(10),
                             child: Text(
                               '${e['festival']}',
-                              style:
-                                  TextStyle(color: Colors.brown, fontSize: 30),
+                              style: TextStyle(
+                                  color: Colors.brown,
+                                  fontSize: 30,
+                                  fontFamily: 'font7'),
                             ),
                           ),
                         ),

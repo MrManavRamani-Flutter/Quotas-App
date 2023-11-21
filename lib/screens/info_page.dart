@@ -14,7 +14,10 @@ class _Info_PageState extends State<Info_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Info Pages'),
+        title: const Text(
+          'Info Pages',
+          style: TextStyle(fontFamily: 'font4'),
+        ),
         centerTitle: true,
       ),
       body: Container(
@@ -36,30 +39,21 @@ class _Info_PageState extends State<Info_Page> {
                       color: Colors.white,
                     ),
                     width: double.infinity,
-                    child: Column(
-                      children: [
-                        Expanded(
-                          flex: 3,
-                          child: Container(
-                            height: 250,
-                            width: double.infinity,
-                            color: Colors.brown,
-                          ),
+                    child: Expanded(
+                      flex: 3,
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 230,
+                        width: double.infinity,
+                        color: Colors.brown,
+                        child: const Text(
+                          'Quotes',
+                          style: TextStyle(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'font6'),
                         ),
-                        Expanded(
-                          flex: 1,
-                          child: Container(
-                            alignment: Alignment.center,
-                            child: const Text(
-                              'Quote Page',
-                              style: TextStyle(
-                                fontSize: 25,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
@@ -74,7 +68,7 @@ class _Info_PageState extends State<Info_Page> {
                   Navigator.of(context).pushNamed('festival');
                 },
                 child: Card(
-                  elevation: 8,
+                  elevation: 15,
                   child: Container(
                     alignment: const Alignment(0, 0),
                     decoration: BoxDecoration(
@@ -82,11 +76,20 @@ class _Info_PageState extends State<Info_Page> {
                       color: Colors.white,
                     ),
                     width: double.infinity,
-                    child: const Text(
-                      'Festival',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.black,
+                    child: Expanded(
+                      flex: 3,
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 230,
+                        width: double.infinity,
+                        color: Colors.brown,
+                        child: const Text(
+                          'Festival',
+                          style: TextStyle(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'font6'),
+                        ),
                       ),
                     ),
                   ),

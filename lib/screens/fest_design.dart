@@ -56,8 +56,10 @@ class _Fest_DesignState extends State<Fest_Design> {
       appBar: AppBar(
         title: Text(
           '${Data['festival']} Post Design',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.bold, fontFamily: 'font6'),
         ),
+        centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {
@@ -71,6 +73,7 @@ class _Fest_DesignState extends State<Fest_Design> {
                   chooseColor = Colors.black;
                   chooseBackGroundColor = Colors.white;
                   chooseImage = '';
+                  chooseFonts = '';
                   Global.fest_quote = 'Press + To Add Quote';
                 });
               },
