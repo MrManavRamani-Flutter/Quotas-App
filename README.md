@@ -1,6 +1,10 @@
-# quotes_model
+# Festival_model
 
 A new Flutter project.
+
+# Quotes And Also Festival Post Maker........
+
+https://github.com/MrManavRamani-Flutter/Quotas-App/assets/148671843/3a513def-ddf4-422a-b491-8655bfcedb28
 
 ## Getting Started
 
